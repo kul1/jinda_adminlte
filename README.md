@@ -1,6 +1,6 @@
-# Theme: Jinda_adminlte (Version 0.4.4) 
+# Theme: Jinda_adminlte 
 
-Convert Jinda jquery.mobile to Jinda bootstrap AdminBSB theme 
+Convert Jinda jquery.mobile to Jinda bootstrap AdminLTE theme 
 Make sure finish Jinda Installation first.
 
 ## Requirement
