@@ -31,6 +31,8 @@ Or install it yourself as:
 ## Usage
 
     $ rails generate jinda_adminlte:install
+### Include jindalte.js in application.js
+### Include jindalte.css in applicaiton.css
 
 ## Contributing
 
