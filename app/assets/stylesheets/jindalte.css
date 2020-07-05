@@ -13,6 +13,7 @@
  *= require AdminLTE.min.css
  *= require bootstrap3-wysihtml5.min.css 
  *= require skins/_all-skins.min.css
+ *= require font-awesome
  *= require_self
  */
 
