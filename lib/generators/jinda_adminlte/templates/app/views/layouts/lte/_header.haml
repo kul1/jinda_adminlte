@@ -4,11 +4,11 @@
   %a.logo{:href => root_path}
     / mini logo for sidebar mini 50x50 pixels
     %span.logo-mini
-      %b> A
-      LT
+      %b> J
+      LTE
     / logo for regular state and mobile devices
     %span.logo-lg
-      %b> Admin
+      %b> Jinda
       LTE
   / Header Navbar: style can be found in header.less
   %nav.navbar.navbar-static-top
@@ -86,17 +86,26 @@
               %p
                 #{$user_name} - Developer
                 %small Member since Nov. 2012
-            %li.user-body
-              .col-xs-4.text-center
-                %a{:href => "#"} Followers
-              .col-xs-4.text-center
-                %a{:href => "#"} Sales
-              .col-xs-4.text-center
-                %a{:href => "#"} Friends
+                
+            - if !login? 
+              %li.user-body
+                / Add Profile and Status here
+                %li
+                  .col-xs-4.text-center
+                    %a{:href => '/auth/facebook', "data-panel" => "main", rel: "external"}
+                      %i.fa.fa-facebook 
+                  .col-xs-4.text-center
+                    %a{:href => '/auth/google_oauth2', "data-panel" => "main", rel: "external"}
+                      %i.fa.fa-google
             %li.user-footer
-              .pull-left
-                %a.btn.btn-default.btn-flat{:href => "#"} Profile
               .pull-right
-                %a.btn.btn-default.btn-flat{:href => "#"} Sign out
-    
+              - if login?
+                %li
+                  %a.btn.btn-default.btn-flat{"data-panel" => "main", :href => logout_path, "data-ajax"=>"false"} Sign Out
+              - else
+                %li
+                  %a.btn.btn-default.btn-flat{:href =>new_session_path,"data-panel" => "main"}
+                    %i.fa.fa-circle-o
+                    %span
+                      Sign In
     

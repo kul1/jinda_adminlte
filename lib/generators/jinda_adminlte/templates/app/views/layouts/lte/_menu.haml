@@ -24,18 +24,21 @@
   %li
     %a{:href =>new_session_path,"data-panel" => "main"}
       %i.fa.fa-circle-o
+      %span
       Sign In
   %li
     %a{:href =>new_identity_path, "data-panel" => "main"}
       %i.fa.fa-circle-o
-      Sign Up 
+      %span
+        Sign Up 
 %li
   = link_to "Refresh", "#", :onclick=>"window.location.replace('/')"
 - if !login? 
   %li
     %a{:href => '/auth/facebook', "data-panel" => "main", rel: "external"}
       %i.fa.fa-facebook 
-      Sign-in with facebook
+      %span
+        Sign-in with facebook
   %li
     %a{:href => '/auth/google_oauth2', "data-panel" => "main", rel: "external"}
       %i.fa.fa-google
