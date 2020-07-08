@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://www.github.com/kul1/jinda_adminlte"
   spec.license       = "MIT"
 
-  spec.files         = Dir["{lib,vendor}/**/*"]
+  spec.files         = Dir["{lib,vendor,app}/**/*"]
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
