@@ -19,8 +19,8 @@ module Jinda_adminlte
 
     def copy_theme
       copy_file "application.js","app/assets/javascripts/application.js"
-      copy_file "application.css","app/assets/stylesheets/application.css"
-      copy_file "jinda.css","app/assets/stylesheets/jinda.css"
+      copy_file "application.scss","app/assets/stylesheets/application.scss"
+      copy_file "jinda.scss","app/assets/stylesheets/jinda.scss"
       copy_file "application.haml","app/views/layouts/application.haml"
       copy_file "adminltes_controller.rb","app/controllers/adminltes_controller.rb"
     end
