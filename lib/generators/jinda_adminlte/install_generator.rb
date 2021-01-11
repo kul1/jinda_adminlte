@@ -9,11 +9,15 @@ module Jinda_adminlte
     def setup_app
       inside("app/views/layouts") { run "mv application.haml application.haml.bak" }
       inside("app/views/layouts") { run "mv lte lte.bak" }
+      inside("app/views/identities") { run "mv new.html.haml new-bak.html.haml" }
+      inside("app/views/sessions") { run "mv new.html.haml new-bak.html.haml" }
       inside("app/assets") { run "mv jinda_assets ../../tmp/cache" }
       inside("app/assets") { run "mv javascripts ../../tmp/cache" }
       inside("app/assets") { run "mv stylesheets ../../tmp/cache" }
       directory "app/views/adminltes"
       directory "app/views/layouts/lte"
+      directory "app/views/identities"
+      directory "app/views/sessions"
 
     end
 
