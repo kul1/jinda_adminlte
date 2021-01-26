@@ -1,4 +1,4 @@
-// jinda.scss from theme jinda_adminlte
+// jinda.scss from theme jinda_adminlte template
 #tooltip{
   position:absolute;
   border:1px solid #333;
@@ -59,7 +59,17 @@
   display: block;
 
 }
+.row-description{
+  font-size: 12px;
+}
 
+.right-date{
+  font-size: 10px;
+  float: right;
+}
+.row-body{
+  font-size: 12px;
+}
 #logreg-forms{
   width:412px;
   margin:10vh auto;
@@ -77,7 +87,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 .form-control {
-  font-size: 16px;
+  font-size: 12px;
   transition: all 0.4s;
   box-shadow: none;
 }
@@ -85,7 +95,7 @@ body {
   border-color: #5cb85c;
 }
 .form-control, .btn {
-  border-radius: 50px;
+  border-radius: 10px;
   outline: none !important;
 }
 .form-group input {
@@ -182,4 +192,49 @@ body {
   float: left;
   margin: 3px 10px;
   font-size: 20px;
+}
+.container{
+  margin: 5px;
+}
+
+/* Fixed Jinda_adminLTE treemenu, Sign_in*/
+
+
+@media (min-width: 768px) {
+
+	.sidebar-mini.sidebar-collapse .main-sidebar { 
+		width: 40px !important;
+	}
+  .container{
+    width: 580px;
+  }
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+}
+.sidebar-menu {
+	text-align: left;
+}
+
+.inner ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.form-group.form-control input{
+	background: transparent;
+  padding: 5px;
+}
+
+.form-group.form-control input[type=text]:focus {
+	background-color: transparent;
+}
+
+.display-addcomment{
+
+  float: left;
+  width: 450px;
 }
