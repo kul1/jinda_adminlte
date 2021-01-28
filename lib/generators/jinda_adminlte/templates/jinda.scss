@@ -1,4 +1,4 @@
-// jinda.scss from theme jinda_adminlte template
+// jinda.scss from theme jinda_adminlte template directory
 #tooltip{
   position:absolute;
   border:1px solid #333;
@@ -195,6 +195,11 @@ body {
 }
 .container{
   margin: 5px;
+}
+
+/* Fixed Jinda_adminLTE .main-header .logo */
+.main-header .logo {
+  height: 51px;
 }
 
 /* Fixed Jinda_adminLTE treemenu, Sign_in*/
