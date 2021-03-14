@@ -1,15 +1,15 @@
 // jinda.scss from theme jinda_adminlte template directory
-#tooltip{
-  position:absolute;
-  border:1px solid #333;
-  background:#f7f5d1;
-  padding:2px 5px;
-  color:#333;
-  display:none;
+#tooltip {
+  position: absolute;
+  border: 1px solid #333;
+  background: #f7f5d1;
+  padding: 2px 5px;
+  color: #333;
+  display: none;
 }
 #notice {
-  color: #F90609;
-  background-color: #EBD1D1;
+  color: #f90609;
+  background-color: #ebd1d1;
   font-weight: bolder;
   padding-left: 10px;
 }
@@ -25,9 +25,9 @@
   color: white;
   width: 80px;
   height: 80px;
-  background:url(images/button_blue.png) no-repeat;
+  background: url(images/button_blue.png) no-repeat;
   display: table-cell;
-  text-align:center;
+  text-align: center;
 }
 .step_now {
   font-size: 40px;
@@ -36,9 +36,9 @@
   color: white;
   width: 80px;
   height: 80px;
-  background:url(images/button_red.png) no-repeat;
+  background: url(images/button_red.png) no-repeat;
   display: table-cell;
-  text-align:center;
+  text-align: center;
 }
 .steps_done {
   font-size: 40px;
@@ -47,9 +47,9 @@
   color: white;
   width: 80px;
   height: 80px;
-  background:url(images/button_black.png) no-repeat;
+  background: url(images/button_black.png) no-repeat;
   display: table-cell;
-  text-align:center;
+  text-align: center;
 }
 .sign_in {
   width: 100%;
@@ -57,34 +57,37 @@
   padding: 15px;
   margin: auto;
   display: block;
-
 }
-.row-description{
+.row-description {
   font-size: 12px;
 }
 
-.right-date{
+.right-date {
   font-size: 10px;
   float: right;
 }
-.row-body{
+.row-body {
   font-size: 12px;
 }
-#logreg-forms{
-  width:412px;
-  margin:10vh auto;
-  background-color:#f3f3f3;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+#logreg-forms {
+  width: 412px;
+  margin: 10vh auto;
+  background-color: #f3f3f3;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.module-table{
+.module-table {
   display: grid;
+}
+
+.module-table textarea {
+  height: 200px;
 }
 
 body {
   background: #dfe7e9;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .form-control {
   font-size: 12px;
@@ -94,7 +97,8 @@ body {
 .form-control:focus {
   border-color: #5cb85c;
 }
-.form-control, .btn {
+.form-control,
+.btn {
   border-radius: 10px;
   outline: none !important;
 }
@@ -115,7 +119,7 @@ body {
 }
 .signup-form a {
   color: #5cb85c;
-}    
+}
 .signup-form h2 {
   text-align: center;
   font-size: 34px;
@@ -129,7 +133,7 @@ body {
 .signup-form .form-group {
   margin-bottom: 20px;
 }
-.signup-form .btn {        
+.signup-form .btn {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -172,7 +176,7 @@ body {
   font-weight: normal;
   border: none;
   transition: all 0.4s;
-}	
+}
 .social-btn .btn:first-child {
   margin-left: 0;
 }
@@ -193,7 +197,7 @@ body {
   margin: 3px 10px;
   font-size: 20px;
 }
-.container{
+.container {
   margin: 5px;
 }
 
@@ -204,42 +208,46 @@ body {
 
 /* Fixed Jinda_adminLTE treemenu, Sign_in*/
 
-
 @media (min-width: 768px) {
-
-	.sidebar-mini.sidebar-collapse .main-sidebar { 
-		width: 40px !important;
-	}
-  .container{
+  .sidebar-mini.sidebar-collapse .main-sidebar {
+    width: 40px !important;
+  }
+  .container {
     width: 580px;
   }
 }
 
 body {
-	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
-	line-height: 1.5;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
 }
 .sidebar-menu {
-	text-align: left;
+  text-align: left;
 }
 
 .inner ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.form-group.form-control input{
-	background: transparent;
+.form-group.form-control input {
+  background: transparent;
   padding: 5px;
 }
 
-.form-group.form-control input[type=text]:focus {
-	background-color: transparent;
+.form-group.form-control input[type="text"]:focus {
+  background-color: transparent;
 }
 
-.display-addcomment{
-
+.display-addcomment {
   float: left;
   width: 450px;
+}
+
+.img-circle {
+  max-width: 45px;
+}
+.comment-user-image {
+  max-width: 45px;
 }

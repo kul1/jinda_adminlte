@@ -1,3 +1,3 @@
 module JindaAdminlte
-  VERSION = "0.7.0.4"
+  VERSION = "0.7.5"
 end
