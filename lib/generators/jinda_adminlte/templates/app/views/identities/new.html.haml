@@ -11,7 +11,7 @@
         %a.btn.btn-info.btn-lg{:href => "#"}
           %i.fa.fa-twitter
           Twitter
-        %a.btn.btn-danger.btn-lg{:href => "/auth/google_oauth2"}
+        %a.btn.btn-danger.btn-lg{:href => "/auth/google_oauth2/callback"}
           %i.fa.fa-google
           Google
       .or-seperator
@@ -39,6 +39,7 @@
       .form-group.form-control
         = label_tag :password_confirmation, 'Confirm password'
         = password_field_tag :password_confirmation
+      %input{:type => "hidden", :name => "authenticity_token", :value => form_authenticity_token}
       %button.btn.btn-success.btn-block.actions{:type => "submit"}
         %i.fas.fa-sign-up-alt
         Sign Up
